@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <title>Meus Livros</title>
+  </head>
+  <body>
+    <div class="conteudo">
+      <!---------------------conteudo------------------------>
+      <div class="header">
+        <!--------------------header------------------------->
+        <div class="titulo">
+          <span class="titulo-header">Meus Livros</span>
+        </div>
+      </div>
+      <!--------------------Fim header----------------------->
+      <div class="main">
+        <!--------------------main--------------------------->
+        <div class="card-board">
+          <!-- <button class="botao-criar">+</button> -->
+          <!-- <div class="card">
+            <button class="botao close-x">x</button>
+            <span class="titulo-livro">Título Aqui</span>
+            <span class="autor">Nome do Autor</span>
+            <span class="paginas">Numero de Paginas</span>
+            <button class="botao read-notification">Já lido?</button>
+          </div>
+
+          <div class="card">
+            <button class="botao close-x">x</button>
+            <span class="titulo-livro">Título Aqui</span>
+            <span class="autor">Nome do Autor</span>
+            <span class="paginas">Numero de Paginas</span>
+            <button class="botao read-notification">Já lido?</button>
+          </div> -->
+        </div>
+      </div>
+      <!--------------------Fim main------------------------->
+    </div>
+    <dialog class="modal-formulario">
+      <div class="modal-conteudo">
+        <span class="titulo-modal">Novo Livro</span>
+        <input type="text" id="input-titulo" placeholder="Título do livro" />
+        <input type="text" id="input-autor" placeholder="Nome do autor" />
+        <input type="text" id="input-paginas" placeholder="Número de páginas" />
+        <label> <input type="checkbox" id="input-lido" /> Já lido? </label>
+        <button class="botao salvar">Salvar</button>
+        <button class="botao cancelar">Cancelar</button>
+      </div>
+    </dialog>
+    <!--------------------Fim conteudo----------------------->
+  </body>
+</html>

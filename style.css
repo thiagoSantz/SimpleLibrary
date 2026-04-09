@@ -1,0 +1,219 @@
+/*#region começo--------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: medium;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* troca min-height por height */
+}
+
+/*#endregion-----------------------------------------------*/
+/*#region header----------------------------------------*/
+
+.header {
+  display: flex;
+  padding: 4rem;
+  gap: 10px;
+  background: linear-gradient(45deg, #4a90d9, #7b2ff7);
+  /*---------------------------------*/
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.titulo-header {
+  font-weight: bold;
+  font-size: xx-large;
+  margin-left: 5rem;
+  font-family: "Merriweather", serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/*#endregion------------------------------------------------*/
+/*#region --------------------------------------------*/
+.main {
+  background-color: rgb(206, 202, 209);
+  padding: 2rem;
+  padding-top: 4rem;
+  gap: 15px;
+  /*-------*/
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+}
+
+dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-formulario {
+  border: none;
+  border-radius: 12px;
+  padding: 2rem;
+  background:
+    linear-gradient(145deg, #ffffff, #e0e0e0) padding-box,
+    linear-gradient(0deg, #7b2ff7, #4a90d9) border-box;
+  border-left: 6px solid transparent;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.modal-formulario::backdrop {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+.modal-conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+
+.modal-conteudo input {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.modal-conteudo .botao {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.titulo-modal {
+  font-weight: 700;
+  font-size: x-large;
+  margin-bottom: 15px;
+}
+
+.card-board {
+  display: flex;
+  flex-wrap: wrap; /* quebra para a linha de baixo */
+  justify-content: center;
+  gap: 35px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.2rem;
+  min-height: 260px;
+  width: 160px;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  /*--------------------------------*/
+  background:
+    linear-gradient(145deg, #ffffff, #e0e0e0) padding-box,
+    linear-gradient(0deg, #7b2ff7, #4a90d9) border-box;
+  border-left: 6px solid transparent;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.titulo-livro {
+  font-weight: 700;
+  font-size: x-large;
+  margin-bottom: 15px;
+}
+
+.autor {
+  font-size: medium;
+  color: rgb(68, 68, 68);
+}
+
+.paginas {
+
+  font-size: small;
+  color: rgb(141, 141, 141);
+}
+
+.read-notification {
+  margin-top: auto;
+}
+
+.close-x {
+  margin-bottom: auto;
+  margin-left: auto;
+}
+
+/*#endregion---------------------------------------------------*/
+/*#region  ----------------------------------------*/
+.botao {
+  border: 2px solid rgb(172, 172, 172);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 6px;
+}
+
+.botao:hover {
+  transform: scale(1.1);
+}
+
+.botao:active {
+  transform: scale(0.95);
+}
+
+/*--------------------------------------*/
+.botao-criar {
+  margin-left: auto;
+  margin-right: 5rem; /* afasta da borda direita */
+  width: 135px;
+  height: 55px;
+  border-radius: 15px;
+  border: none;
+  border-left: none;
+  background:
+    linear-gradient(145deg, #d6bde0, #d6bde0) padding-box,
+    linear-gradient(0deg, #7b2ff7, #4a90d9) border-box;
+  border-left: 6px solid transparent;
+
+  color: #121212;
+  font-size: large;
+  font-weight: bold;
+  font-family: "Poppins", serif;
+
+  cursor: pointer;
+  box-shadow:
+    4px 4px 8px rgba(0, 0, 0, 0.3),
+    -2px -2px 6px rgba(255, 255, 255, 0.5);
+}
+
+.botao-criar:hover {
+  transform: scale(1.05);
+  box-shadow:
+    6px 6px 12px rgba(0, 0, 0, 0.3),
+    -2px -2px 6px rgba(255, 255, 255, 0.5);
+}
+
+.botao-criar:active {
+  transform: scale(0.95);
+  box-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.3),
+    -1px -1px 3px rgba(255, 255, 255, 0.5);
+}
+
+/*#endregion---------------------------------------------------*/
+/*#region  ------------------------------------*/
+
+/*--------------------------------*/
+
+/*#endregion---------------------------------------------------*/
